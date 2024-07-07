@@ -4,9 +4,10 @@ import art
 
 isTrue = True
 correct_number = 0
+ques1 = random.choice(Data.data)
 while isTrue:
     print(f"\nCorrect question number: {correct_number}\n")
-    ques1 = random.choice(Data.data)
+
     ques2 = random.choice(Data.data)
 
     print(f"Compare A: {ques1['name']}, {ques1['description']}, {ques1['country']}")
@@ -21,6 +22,7 @@ while isTrue:
         max_follower = 'A'
     else:
         max_follower = 'B'
+        ques1 = ques2
 
     if answer == max_follower:
         correct_number += 1
