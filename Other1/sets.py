@@ -12,3 +12,18 @@ something2 = 0      #for boolean FALSE
 something3 = 20     #for boolean TRUE
 
 print(f"{bool(something)}\n{bool(something1)}\n{bool(something2)}\n{bool(something3)}")
+
+
+#Ternary Operator
+
+is_true = True
+
+print("This statement is True") if is_true else print("This statement is false")
+
+# == checks are they same object.  (is) checks that are they in same place memory.
+print([1, 2, 3] is [1, 2, 3])  #false
+print([1, 2, 3] == [1, 2, 3])  #True
+
+
+
+
